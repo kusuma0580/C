@@ -1,0 +1,3 @@
+/*Write a program to copy contents of one file to another. While 
+doing so replace all lowercase characters to their equivalent 
+uppercase characters. */
