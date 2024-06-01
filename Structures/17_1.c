@@ -77,4 +77,79 @@ int main() {
 
     return 0;
 }
-
+/*
+#include<stdio.h>
+#include<string.h>
+struct Student{
+    int roolno;
+    char name[50];
+    char dept[50];
+    char course[50];
+    int yearofjoin;
+};
+void printStudent(int year, int totStudent, struct Student students[]){
+    for(int i = 0; i < totStudent; i++){
+        if(students[i].yearofjoin == year){
+            printf("%d\n", students[i].roolno);
+            printf("%s\n", students[i].name);
+            printf("%s\n", students[i].dept);
+            printf("%s\n", students[i].course);
+            printf("%d\n\n",students[i].yearofjoin);
+        }
+    }
+}
+void printStudentData(int roolno, int totStudent, 
+    struct Student students[])
+    {
+    for(int i = 0; i < totStudent; i++){
+        if(students[i].roolno == roolno){
+            printf("%d\n", students[i].roolno);
+            printf("%s\n", students[i].name);
+            printf("%s\n", students[i].dept);
+            printf("%s\n", students[i].course);
+            printf("%d\n\n",students[i].yearofjoin);
+            break;
+        }
+    }
+    printf("done");
+}
+int main(){
+    struct Student students[200];
+    int totStudents = 0;
+    int regno = 0;
+    int year = 0;
+    int choice = 1;
+    do{
+        printf("roolno:");
+        scanf("%d", &students[totStudents].roolno);
+        printf("name:");
+        scanf("%s", students[totStudents].name);
+        
+        printf("dept:");
+        scanf("%s", students[totStudents].dept);
+        printf("course:");
+        scanf("%s",students[totStudents].course);
+        printf("yearofjoin:");
+        scanf("%d", &students[totStudents].yearofjoin);
+        totStudents += 1;
+        printf("1/0: ");
+        scanf("%d",&choice);
+    }while(choice == 1);
+    printf("choose: 1-year, 2-rollno ");
+    
+    int choose=0;
+    scanf("%d", &choose);
+    switch(choose){
+        case 1:
+            printf("enter year");
+            scanf("%d", &year);
+            printStudent(year, totStudents, students);
+            break;
+        case 2:
+            printf("enter regno ");
+            scanf("%d", &regno);
+            printStudentData(regno, totStudents, students);
+            break;
+    }
+    return 0;
+}*/
