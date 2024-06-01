@@ -42,3 +42,29 @@ int main( )
     puts ( str2 ) ; 
     return 0 ; 
 } 
+/*#include<stdio.h>
+int main(){
+    char str[80],str1[80];
+    char *p, *q;
+    printf("Enter string: ");
+    gets(str);
+    p = str;
+    q = str1;
+    while(*p){
+        if(*p == 't'){
+            p++;
+            if(*p == 'h'){
+                p++;
+                if(*p == 'e');
+            }
+            else{
+                p--;
+            }
+        }
+        else{
+            *q++ = *p;
+        }
+        p++;
+    }
+    puts(str1);
+    return 0;*/
